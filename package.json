@@ -1,0 +1,29 @@
+{
+  "name": "kaoyan-checkin-platform",
+  "version": "1.0.0",
+  "description": "考研打卡学习管理平台",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "admin:dev": "cd admin && npm start",
+    "build": "npm run backend:build && npm run frontend:build",
+    "backend:build": "cd backend && npm run build",
+    "frontend:build": "cd frontend && npm run build",
+    "start": "npm run backend:start",
+    "backend:start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "考研",
+    "打卡",
+    "学习管理",
+    "社交",
+    "教育"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 
